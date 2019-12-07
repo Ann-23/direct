@@ -1,0 +1,285 @@
+.card {
+  position: relative;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 1%;
+  max-width: 315px;
+  background-color: #e9ecf2;
+  box-shadow: 0 0 25px -3px rgba(0, 0, 0, 0.3);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    width: 55px;
+    height: 47px;
+    background-image: url("../img/corner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::before {
+    content: "-70%";
+    position: absolute;
+    top: 0;
+    right: -3px;
+    font-family: "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    z-index: 100;
+  }
+}
+
+.card__top {
+  padding-bottom: 5%;
+}
+
+.card__text-block {
+  text-align: right;
+}
+
+.card__prices {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 15%;
+  margin-bottom: 5%;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.card__price-old {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1em;
+  text-decoration: line-through;
+  color: #575757;
+}
+
+.card__price-new {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1em;
+  color: #de4814;
+}
+
+.card__button-order {
+  margin-bottom: 5%;
+  font-family: "Akrobat", sans-serif;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  background-color: #3ab16f;
+  border-radius: 0;
+}
+
+.card__button-details {
+  margin-bottom: 5%;
+  font-family: "Akrobat", sans-serif;
+  font-size: 1.1em;
+  color: #b83b11;
+  letter-spacing: 0.1em;
+  background-color: #ffffff;
+  border: 2px solid #e96c41;
+  border-radius: 0;
+}
+
+.card__info {
+  padding: 0;
+  font-family: "Corbel", sans-serif;
+  font-size: 0.8em;
+  color: #ab310c;
+  text-align: right;
+  border-bottom: 1px dashed #ab310c;
+  cursor: pointer;
+}
+
+.card__title,
+.card__title-bottom {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.card__title {
+  margin-bottom: 2%;
+  padding-bottom: 0.5%;
+  max-width: 345px;
+  font-weight: 700;
+  line-height: 2em;
+  border-bottom: 1px solid #000000;
+}
+
+.card__title-bottom {
+  margin-bottom: 4%;
+}
+
+.card__text {
+  font-size: 0.9em;
+  color: #004734;
+}
+
+.card__social {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 3%;
+  background-color: #fdfdfe;
+}
+
+.card__social-list {
+  padding-left: 5%;
+}
+
+.card__social-text {
+  font-size: 1em;
+  color: #828384;
+  text-align: center;
+}
+
+.card__social::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.card__social-item {
+  margin-right: 3%;
+  float: left;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.card__social-item--vk {
+  background-position: left top;
+}
+
+.card__social-item--inst {
+  background-position: -39px 0;
+}
+
+.card__social-item--fb {
+  background-position: -77px 0;
+}
+
+.card__social-item--ok {
+  background-position: -115px 0;
+}
+
+.card__social-item--youtube {
+  background-position: -154px 0;
+}
+
+.card__social-item--ldin {
+  background-position: -193px 0;
+}
+
+.card__social-item--pen {
+  background-position: -233px 0;
+}
+
+.card__social-item--smile {
+  background-position: -271px 0;
+}
+
+.card__social-item--yan {
+  background-position: -309px 0;
+}
+
+.card__social-item--gplus {
+  background-position: -348px 0;
+}
+
+@media (min-width: 768px) {
+  .card {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 3%;
+
+    &::after {
+      top: -14px;
+      right: -10px;
+      width: 105px;
+      height: 90px;
+    }
+
+    &::before {
+      top: 11px;
+      right: -3px;
+      font-size: 26px;
+      font-weight: 700;
+    }
+  }
+
+  .card:nth-of-type(1),
+  .card:nth-of-type(3) {
+    margin-right: 93px;
+  }
+
+  .card__info {
+    font-size: 0.8em;
+  }
+
+  .card__title,
+  .card__title-bottom {
+    font-size: 1.2em;
+  }
+
+  .card__title {
+    line-height: 2em;
+  }
+
+  .card__text {
+    font-size: 1.28em;
+  }
+
+  .card__social-text {
+    font-size: 1.125em;
+  }
+}
+
+@media (min-width: 960px) {
+  .card {
+    max-width: 440px;
+  }
+
+  .card:nth-of-type(1),
+  .card:nth-of-type(3) {
+    margin-right: 35px;
+  }
+
+  .card__price-old {
+    font-size: 1.875em;
+  }
+
+  .card__price-new {
+    font-size: 2.375em;
+  }
+
+  .card__info {
+    font-size: 1.06em;
+  }
+
+  .card__title {
+    line-height: 1.7em;
+  }
+
+  .card__button-order {
+    font-size: 1.5em;
+  }
+
+  .card__button-details {
+    font-size: 1.396em;
+  }
+
+  .card__social {
+    padding: 2%;
+  }
+}

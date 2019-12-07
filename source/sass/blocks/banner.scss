@@ -1,0 +1,18 @@
+.banner {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+
+@media (min-width: 1200px) {
+  .banner::after {
+    position: absolute;
+    content: "";
+    width: 111px;
+    height: 231px;
+    bottom: -90px;
+    right: 3.5%;
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+  }
+}

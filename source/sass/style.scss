@@ -1,0 +1,12 @@
+@import "node_modules/normalize-scss/sass/normalize.scss";
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "global/fonts";
+@import "global/global";
+@import "vars";
+@import "blocks/navbar";
+@import "blocks/banner";
+@import "blocks/main";
+@import "blocks/card";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/popup";
