@@ -5,7 +5,7 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.7.x",
     "bootstrap-sass": "^3.4.1",
-    "browser-sync": "2.26.x",
+    "browser-sync": "2.27.x",
     "del": "^5.1.0",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
